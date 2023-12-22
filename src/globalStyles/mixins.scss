@@ -1,0 +1,7 @@
+@mixin disFl($flex, $dir, $content, $items, $gap) {
+  display: $flex;
+  flex-direction: $dir;
+  justify-content: $content;
+  align-items: $items;
+  gap: $gap;
+}

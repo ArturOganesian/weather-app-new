@@ -1,0 +1,24 @@
+@import "globalStyles/global.scss";
+@import "globalStyles/mixins.scss";
+.header_container {
+  @include disFl(flex, row, space-evenly, center, 45px);
+  background-color: $bgColor;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  left: 0;
+  top: 0;
+  font-family: $headFontFamily;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  img {
+    width: 180px;
+    height: 90px;
+    @media screen and (max-width: 600px) {
+      height: 55px;
+    }
+  }
+}

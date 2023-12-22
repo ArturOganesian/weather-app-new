@@ -1,0 +1,40 @@
+@import "globalStyles/global.scss";
+@import "globalStyles/mixins.scss";
+
+.footer_container {
+  @include disFl(flex, row, space-evenly, center, 45px);
+  background-color: $bgColor;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+
+  img {
+    width: 140px;
+    height: 90px;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 0px;
+    padding-top: 10px;
+  }
+}
+
+.developer_info {
+  @include disFl(flex, row, center, center, _);
+  p {
+    font-family: $devInfoFont;
+    span {
+      color: $devInfoColor;
+    }
+  }
+
+  a {
+    img {
+      width: 25px;
+      height: 25px;
+      padding-left: 10px;
+    }
+  }
+}
