@@ -4,14 +4,7 @@ import Footer from "components/footer/Footer";
 function App() {
   return (
     <div className="App">
-      <main
-        style={{
-          marginLeft: "auto",
-          marginRight: "auto",
-          maxWidth: "100%",
-          paddingTop: "13rem",
-        }}
-      >
+      <main>
         <Header />
         <Children />
         <Footer />

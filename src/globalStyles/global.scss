@@ -2,3 +2,14 @@ $bgColor: #79c2d0;
 $headFontFamily: "Quicksand", sans-serif;
 $devInfoFont: "Sevillana", cursive;
 $devInfoColor: #f2f2f2;
+$errorColor: rgb(255, 99, 71);
+body {
+  margin: 0;
+  padding: 0;
+}
+.App main {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+}

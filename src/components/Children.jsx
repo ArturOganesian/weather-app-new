@@ -1,7 +1,7 @@
 import React from "react";
-
+import WeatherWindow from "components/weather/WeatherWindow";
 const Children = () => {
-  return <div>Children</div>;
+  return <WeatherWindow />;
 };
 
 export default Children;

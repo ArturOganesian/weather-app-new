@@ -1,0 +1,60 @@
+@import "globalStyles/global.scss";
+@import "globalStyles/mixins.scss";
+
+.weather_container {
+  @include disFl(flex, _, center, _, _);
+
+  padding-bottom: 25px;
+  font-family: "Incosolata", monospace;
+  span {
+    color: $devInfoColor;
+  }
+}
+.window_container {
+  @include disFl(flex, column, _, center, _);
+  background-color: $bgColor;
+  width: 350px;
+  padding: 25px;
+  border-radius: 15px;
+  .loading_icon {
+    color: $devInfoColor;
+    padding: 15px;
+    font-size: 35px;
+  }
+  .request_error {
+    font-size: 12px;
+    font-family: $headFontFamily;
+    span {
+      color: $errorColor;
+    }
+  }
+}
+
+.title_img_container {
+  @include disFl(flex, column, center, center, _);
+  padding-bottom: 10px;
+
+  img {
+    height: 110px;
+  }
+}
+.temp_info_container {
+  border-top: 2px solid $devInfoColor;
+  @include disFl(flex, column, _, center, _);
+}
+
+.wind_visibility_container {
+  @include disFl(flex, column, _, center, _);
+  border-top: 2px solid $devInfoColor;
+}
+.sun_location_container {
+  border-top: 2px solid $devInfoColor;
+  border-bottom: 2px solid $devInfoColor;
+  img {
+    width: 35px;
+    height: 35px;
+  }
+}
+.sunLocation_info {
+  @include disFl(flex, row, center, center, 15px);
+}

@@ -1,7 +1,7 @@
 @import "globalStyles/global.scss";
 @import "globalStyles/mixins.scss";
 .header_container {
-  @include disFl(flex, row, space-evenly, center, 45px);
+  @include disFl(flex, row, space-evenly, center, 114px);
   background-color: $bgColor;
   position: fixed;
   z-index: 1000;
